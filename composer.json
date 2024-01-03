@@ -1,0 +1,27 @@
+{
+  "name":"starfruit/helper-bundle",
+  "description":"Starfruit Helper Bundle",
+  "keywords":[
+    "pimcore bundle", "pimcore tool", "starfruit"
+  ],
+  "homepage":"https://github.com/starfruit-php/helper-bundle",
+  "authors":[
+    {
+      "name":"Starfruit",
+      "email":"gitlab@starfruit.com.vn",
+      "role":"Owner"
+    }
+  ],
+  "require":{
+    "pimcore/pimcore":"^11.0",
+  },
+  "require-dev":{
+  },
+  "suggest":{
+  },
+  "autoload": {
+    "psr-4": {
+      "Starfruit\\HelperBundle\\": "src/"
+    }
+  }
+}

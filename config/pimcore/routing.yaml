@@ -1,0 +1,10 @@
+starfruit_helper_route_admin:
+    resource: "@StarfruitHelperBundle/src/Controller/Admin/*"
+    type: annotation
+    prefix: /admin/starfruit/helper
+
+starfruit_helper_route:
+    resource: "@StarfruitHelperBundle/src/Controller/*"
+    type: annotation
+    prefix: /starfruit/helper
+
