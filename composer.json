@@ -5,6 +5,7 @@
     "pimcore bundle", "pimcore tool", "starfruit"
   ],
   "homepage":"https://github.com/starfruit-php/helper-bundle",
+  "license":"MIT",
   "authors":[
     {
       "name":"Starfruit",
