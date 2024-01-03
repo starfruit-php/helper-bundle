@@ -13,7 +13,7 @@
     }
   ],
   "require":{
-    "pimcore/pimcore":"^11.0",
+    "pimcore/pimcore":"^11.0"
   },
   "require-dev":{
   },
