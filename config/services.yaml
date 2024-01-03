@@ -19,6 +19,9 @@ services:
     Starfruit\HelperBundle\Model\:
         resource: '../src/Model/*'
 
+    Starfruit\HelperBundle\Validator\:
+        resource: '../src/Validator/*'
+
     Starfruit\HelperBundle\EventListener\Asset\AdminImagePreviewListener:
         tags:
             - { name: kernel.event_listener, event: pimcore.admin.resolve.elementAdminStyle, method: onResolveElementAdminStyle }
