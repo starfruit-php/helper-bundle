@@ -16,8 +16,15 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
+    Starfruit\HelperBundle\Command\:
+        resource: '../src/Command/*'
+        public: true
+
     Starfruit\HelperBundle\Model\:
         resource: '../src/Model/*'
+
+    Starfruit\HelperBundle\Tool\:
+        resource: '../src/Tool/*'
 
     Starfruit\HelperBundle\Validator\:
         resource: '../src/Validator/*'
