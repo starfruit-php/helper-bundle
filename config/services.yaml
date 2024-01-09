@@ -26,6 +26,9 @@ services:
     Starfruit\HelperBundle\Tool\:
         resource: '../src/Tool/*'
 
+    Starfruit\HelperBundle\Service\:
+        resource: '../src/Service/*'
+
     Starfruit\HelperBundle\Validator\:
         resource: '../src/Validator/*'
 

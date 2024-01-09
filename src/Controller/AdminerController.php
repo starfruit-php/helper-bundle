@@ -10,11 +10,12 @@ namespace Starfruit\HelperBundle\Controller {
     use Symfony\Component\HttpKernel\Profiler\Profiler;
     use Symfony\Component\Routing\Annotation\Route;
     use Pimcore\Bundle\AdminBundle\Security\CsrfProtectionHandler;
+    use Symfony\Component\HttpFoundation\JsonResponse;
 
     /**
      * @internal
      */
-    class AdminerController extends AdminAbstractController implements KernelControllerEventInterface
+    class AdminerController extends BaseController implements KernelControllerEventInterface
     {
         /**
          * @var string
@@ -32,6 +33,11 @@ namespace Starfruit\HelperBundle\Controller {
         {
             if ($profiler) {
                 $profiler->disable();
+            }
+
+            if (!$this->allowAdminer())
+            {
+                return new JsonResponse("Forbidden", Response::HTTP_FORBIDDEN);
             }
 
             // disable debug error handler while including adminer
